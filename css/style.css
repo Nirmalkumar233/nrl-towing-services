@@ -329,7 +329,7 @@ a:focus {
 
 .about_detail-box h3,
 .about_detail-box p {
-  text-align: right;
+  text-align: left;
 }
 
 .about_detail-box h3 {
@@ -382,6 +382,8 @@ a:focus {
   position: relative;
 }
 
+
+
 .service_img-box h3 {
   position: absolute;
   left: 0;
@@ -394,6 +396,7 @@ a:focus {
   margin: 0;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+
 }
 
 .s-b-1 h3 {
@@ -410,6 +413,9 @@ a:focus {
 
 .service_img-box img {
   width: 100%;
+  height: 250px;   /* choose the size you want */
+  object-fit: cover; /* crop & fill nicely */
+  border-radius: 8px;
 }
 
 .service-btn,
@@ -619,10 +625,11 @@ a:focus {
 }
 
 .info_logo .logo-box img {
-  width: 65px;
+  width: 55px;
 }
 
 .info_logo .logo-box span {
+  font-size: 16px;
   color: #fff;
 }
 
@@ -698,5 +705,68 @@ a:focus {
 .footer_section a {
   color: #fff;
 }
+
+
+
+
+
+
+
+.btn-floating:hover img {
+  margin-bottom: -3px
+}
+
+.btn-floating {
+    position: fixed;
+    right: 25px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0;
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+}
+
+.btn-floating:hover {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.btn-floating span {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+}
+
+.btn-floating:hover span {
+    display: inline-block;
+}
+
+/* Phone */
+.btn-floating.phone {
+    bottom: 85px;
+    background-color: #760f10;
+}
+
+.btn-floating.phone:hover {
+    background-color: #c03421;
+}
+
+/* WhatsApp */
+.btn-floating.whatsapp {
+    background-color: #34af23;
+    bottom: 25px;
+}
+
+.btn-floating.whatsapp:hover {
+    background-color: #1f7a12
+}
+
+
 
 /* end footer section*/
